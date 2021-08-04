@@ -28,6 +28,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
+
+  //for adding onesignal
   @override
   void initState(){
     super.initState();
@@ -42,6 +44,9 @@ class _MyHomePageState extends State<MyHomePage> {
       color: Colors.purple,
     );
   }
+
+
+  //this part
   Future<void> initPlatformState() async{
     OneSignal.shared.setAppId(oneSignalAppId);
   }
